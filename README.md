@@ -25,4 +25,4 @@ $ web-ext run
 
 ## Preview
 
-Download the [zip](https://github.com/FirefoxUX/photon-extension-kit/archive/master.zip), open Firefox.app, navigate to `about:debugging`, click on "Load Temporary Add-on", select the dowloaded zip, have fun. 
+Download the [zip](https://github.com/FirefoxUX/photon-extension-kit/archive/master.zip), open Firefox.app, navigate to `about:debugging`, click on "Load Temporary Add-on", select the downloaded zip, have fun. 
