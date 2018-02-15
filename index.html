@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Photon Extension Kit</title>
+  <link rel="stylesheet" href="extension.css">
+</head>
+<body>
+  <style>
+    html, body {
+      width: 300px;
+    }
+    .view[hidden] {
+      display: none;
+    }
+  </style>
+
+  <div class="view" id="main">
+    <div class="panel-section-list">
+      <div class="panel-list-item" id="show-tabs">Tabs > </div>
+      <div class="panel-list-item" id="show-text-fields">Text Fiels > </div>
+      <div class="panel-list-item" id="show-buttons">Buttons > </div>
+    </div>
+    <div class="panel-section-separator"></div>
+    <div class="panel-section-list">
+      <div class="panel-list-item" id="show-tabs">Radio Buttons</div>
+      <div class="panel-list-item" id="show-text-fields">Checkboxes</div>
+      <div class="panel-list-item" id="show-buttons">Toggle</div>
+    </div>
+    <div class="panel-section-footer">
+      <div class="panel-section-footer-button">
+        Secondary
+      </div>
+      <div class="panel-section-footer-button default">
+        Primary
+      </div>
+    </div>
+  </div>
+
+  <div class="view" id="tabs">
+    <div class="panel-section-header">
+      <button class="icon-section-header back"></button>
+      <label>Tabs</label>
+    </div>
+    <div class="panel-section-tabs">
+      <button class="panel-section-tabs-button selected">One</button>
+      <button class="panel-section-tabs-button">Two</button>
+      <button class="panel-section-tabs-button">Three</button>
+    </div>
+    <div class="panel-section"></div>
+  </div>
+
+  <div class="view" id="text-fields">
+    <div class="panel-section-header">
+      <button class="icon-section-header back"></button>
+      <label>Text Fields</label>
+    </div>
+    <div class="panel-section-formElements">
+      <div class="panel-formElements-item browser-style">
+        <label for="">Text Field Label</label>
+        <input type="text"/>
+      </div>
+      <div class="panel-formElements-item">
+        <label for="">Text Area Label</label>
+        <textarea class="browser-style"></textarea>
+      </div>
+    </div>
+  </div>
+
+  <div class="view" id="buttons">
+    <div class="panel-section-header">
+      <button class="icon-section-header back"></button>
+      <label>Buttons</label>
+    </div>
+    <div class="panel-section">
+      <button class="browser-style micro">Hello</button>
+      <button class="browser-style default micro">Hello</button>
+    </div>
+    <div class="panel-section">
+      <button class="browser-style">Hello</button>
+      <button class="browser-style default">Hello</button>
+    </div>
+    <div class="panel-section">
+      <button class="browser-style puffy">Hello</button>
+      <button class="browser-style default puffy">Hello</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
