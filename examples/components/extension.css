@@ -462,10 +462,11 @@ textarea.browser-style:not(:disabled):active {
 
 .panel-section-footer-button {
   background-color: var(--grey-90-a10);
+  border: 1px solid transparent;
   border-radius: 2px;
   flex: 0 0 auto;
+  font-size: 13px;
   height: 32px;
-  line-height: 32px;
   margin-left: 8px;
   padding: 0 8px 0;
   text-align: center;
