@@ -3,6 +3,12 @@
 
 @import url('node_modules/photon-colors/photon-colors.css');
 
+/* Temporary variable definition until firefoxux/design-tokens/42 gets merged */
+
+:root {
+  --grey-90-a05: rgba(12, 12, 13, 0.05);
+}
+
 /* Global */
 html,
 body {
@@ -40,6 +46,7 @@ select.browser-style {
   margin-right: 16px;
   outline: 0 !important;
   padding: 0 8px 0;
+  transition: 250ms box-shadow cubic-bezier(.07,.95,0,1), 250ms border cubic-bezier(.07,.95,0,1);
 }
 
 select.browser-style {
@@ -281,9 +288,7 @@ textarea.browser-style {
   font: inherit;
   margin-bottom: 6px;
   padding: 0 6px 0;
-  transition-duration: 250ms;
-  transition-property: box-shadow;
-  transition-timing-function: cubic-bezier(.07,.95,0,1);
+  transition: 250ms box-shadow cubic-bezier(.07,.95,0,1);
 }
 
 textarea.browser-style {
@@ -341,6 +346,7 @@ textarea.browser-style:not(:disabled):active {
   background-position: center center;
   background-repeat: no-repeat;
   border: none;
+  border-radius: 2px;
   fill: var(--grey-90-a80);
   flex-shrink: 0;
   height: 32px;
@@ -349,12 +355,18 @@ textarea.browser-style:not(:disabled):active {
   width: 32px;
 }
 
-.panel-section-header > .icon-section-header:hover {
-  background-color: var(--grey-90-a10);
+.panel-section-header > .icon-section-header::-moz-focus-inner {
+  border: 0;
+  outline: 0;
+}
+
+.panel-section-header > .icon-section-header:hover,
+.panel-section-header > .icon-section-header:focus {
+  background-color: var(--grey-90-a05);
 }
 
 .panel-section-header > .icon-section-header:active {
-  background-color: var(--grey-90-a20);
+  background-color: var(--grey-90-a10);
 }
 
 .panel-section-header > label {
@@ -370,7 +382,7 @@ textarea.browser-style:not(:disabled):active {
 
 .panel-section-header > .text-section-header {
   align-self: center;
-  font-size: 1.385em;
+  font-size: 15px;
   font-weight: lighter;
 }
 
@@ -389,11 +401,11 @@ textarea.browser-style:not(:disabled):active {
 }
 
 .panel-list-item:not(.disabled):hover {
-  background-color: var(--grey-90-a10);
+  background-color: var(--grey-90-a05);
 }
 
 .panel-list-item:not(.disabled):hover:active {
-  background-color: var(--grey-90-a20);
+  background-color: var(--grey-90-a10);
 }
 
 .panel-list-item.disabled {
@@ -412,7 +424,7 @@ textarea.browser-style:not(:disabled):active {
 .panel-list-item > .text-shortcut {
   color: var(--grey-50);
   font: caption;
-  font-size: .847em;
+  font-size: 11px;
   justify-content: flex-end;
 }
 
@@ -468,14 +480,27 @@ textarea.browser-style:not(:disabled):active {
   font-size: 13px;
   height: 32px;
   margin-left: 8px;
+  min-width: 96px;
   padding: 0 8px 0;
   text-align: center;
+  transition: 250ms box-shadow cubic-bezier(.07,.95,0,1);
+}
+
+.panel-section-footer-button::-moz-focus-inner {
+  border: 0;
+  outline: 0;
+}
+
+.panel-section-footer-button:focus {
+  border-color: var(--blue-50);
+  box-shadow: 0 0 0 1px var(--blue-50), 0 0 0 4px var(--blue-50-a30);
 }
 
 .panel-section-footer-button > .text-shortcut {
   color: var(--grey-50);
   font: caption;
-  font-size: .847em;
+  font-size: 11px;
+  margin-left: 8px;
 }
 
 .panel-section-footer-button:hover {
@@ -527,8 +552,14 @@ textarea.browser-style:not(:disabled):active {
   text-align: center;
 }
 
-.panel-section-tabs-button:hover {
-  background-color: var(--grey-90-a10);
+.panel-section-tabs-button::-moz-focus-inner {
+  border: 0;
+  outline: 0;
+}
+
+.panel-section-tabs-button:hover,
+.panel-section-tabs-button:focus {
+  background-color: var(--grey-90-a05);
   box-shadow: 0 4px 0 var(--grey-30) inset;
 }
 
