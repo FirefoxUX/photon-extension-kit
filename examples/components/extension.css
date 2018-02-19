@@ -3,10 +3,12 @@
 
 @import url('node_modules/photon-colors/photon-colors.css');
 
-/* Temporary variable definition until firefoxux/design-tokens/42 gets merged */
 
 :root {
+  /* Until firefoxux/design-tokens/42 gets merged */
   --grey-90-a05: rgba(12, 12, 13, 0.05);
+  /* Until photon-colors 2.1.0 package gets released */
+  --white-100: #ffffff;
 }
 
 /* Global */
@@ -110,7 +112,7 @@ select.browser-style:focus {
 button.browser-style.default {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--blue-60);
-  color: #fff;
+  color: var(--white-100);
 }
 
 button.browser-style.default:hover {
@@ -144,7 +146,7 @@ button.browser-style.puffy {
 }
 
 .browser-style > input[type="radio"] + label::before {
-  background-color: #fff;
+  background-color: var(--white-100);
   background-position: center;
   border: 1px solid #b1b1b1;
   border-radius: 50%;
@@ -199,7 +201,7 @@ button.browser-style.puffy {
 }
 
 .browser-style.focused > input[type="radio"]:checked + label::before {
-  border-color: #fff;
+  border-color: var(--white-100);
 }
 
 /* Checkboxes */
@@ -212,7 +214,7 @@ button.browser-style.puffy {
 }
 
 .browser-style > input[type="checkbox"] + label::before {
-  background-color: #fff;
+  background-color: var(--white-100);
   background-position: center;
   border: 1px solid #b1b1b1;
   content: "";
@@ -266,7 +268,7 @@ button.browser-style.puffy {
 }
 
 .browser-style.focused > input[type="checkbox"]:checked + label::before {
-  border-color: #fff;
+  border-color: var(--white-100);
 }
 
 /* Expander Button */
@@ -282,7 +284,7 @@ button.browser-style.expander {
 /* Fields */
 .browser-style > input[type="text"],
 textarea.browser-style {
-  background-color: #fff;
+  background-color: var(--white-100);
   border: 1px solid var(--grey-20);
   border-radius: 2px;
   font: inherit;
@@ -514,7 +516,7 @@ textarea.browser-style:not(:disabled):active {
 .panel-section-footer-button.default {
   -moz-osx-font-smoothing: grayscale;
   background-color: var(--blue-60);
-  color: #fff;
+  color: var(--white-100);
 }
 
 .panel-section-footer-button.default:hover {
