@@ -3,11 +3,9 @@
 
 @import url('node_modules/photon-colors/photon-colors.css');
 
-
 :root {
-  /* Until firefoxux/design-tokens/42 gets merged */
+  /* Until photon-colors 3.0.0 package gets released */
   --grey-90-a05: rgba(12, 12, 13, 0.05);
-  /* Until photon-colors 2.1.0 package gets released */
   --white-100: #ffffff;
 }
 
