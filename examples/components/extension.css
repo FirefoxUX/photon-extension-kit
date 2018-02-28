@@ -3,12 +3,6 @@
 
 @import url('node_modules/photon-colors/photon-colors.css');
 
-:root {
-  /* Until photon-colors 3.0.0 package gets released */
-  --grey-90-a05: rgba(12, 12, 13, 0.05);
-  --white-100: #ffffff;
-}
-
 /* Global */
 html,
 body {
