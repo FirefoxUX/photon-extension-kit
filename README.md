@@ -1,2 +1,3 @@
-# photon-extension-kit
-Photon styles for your brand new extension
+# Photon Extension Kit
+
+Photon styles for your brand new extension.

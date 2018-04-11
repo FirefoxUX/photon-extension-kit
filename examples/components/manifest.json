@@ -1,0 +1,16 @@
+{
+  "description": "Photon browser style extension",
+  "manifest_version": 2,
+  "name": "Photon Extension Kit",
+  "browser_action": {
+    "browser_style": false,
+    "default_title": "Photon Extension Kit",
+    "default_popup": "index.html"
+  },
+  "version": "0.0.1",
+  "applications": {
+    "gecko": {
+      "strict_min_version": "57.0a1"
+    }
+  }
+}
