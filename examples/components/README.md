@@ -14,7 +14,7 @@ Install `web-ext` globally
 $ npm install -g web-ext
 ```
 
-Navigate to `/photon-extension-kit/examples/components` and run `web-ext`
+Navigate to an example, install the dependencies and run `web-ext`
 
 ```
 $ cd photon-extension-kit/examples/components
