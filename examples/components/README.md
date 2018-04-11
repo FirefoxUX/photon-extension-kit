@@ -18,6 +18,7 @@ Navigate to `/photon-extension-kit/examples/components` and run `web-ext`
 
 ```
 $ cd photon-extension-kit/examples/components
+$ npm install
 $ web-ext run
 ```
 
